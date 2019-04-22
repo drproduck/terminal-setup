@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/drproduck/.cinnamon'
+let g:netrw_dirhist_2='/home/drproduck/Downloads'
+let g:netrw_dirhist_3='/home/drproduck'
+let g:netrw_dirhist_4='/home/drproduck/spectral-hashing'
+let g:netrw_dirhist_5='/home/drproduck'
+let g:netrw_dirhist_6='/home/drproduck/Stochastic-Eigen-decomposition/solvers'
