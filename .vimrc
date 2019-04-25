@@ -19,8 +19,13 @@ execute pathogen#infect()
 filetype plugin indent on
 syntax enable
 
-" center scrolling
+autocmd FileType python setl shiftwidth=2 softtabstop=2 et
+
+" number
+set numberwidth=5
 set number relativenumber
+
+" center scrolling
 set scrolloff=999
 
 set mouse=a
@@ -53,6 +58,17 @@ let g:easyescape_timeout = 100
 " wild mode
 set wildmenu
 set wildmode=longest:full,full
+
+" Make it obvious where 80 characters is
+set textwidth=80
+set colorcolumn=+1
+   
+" qq for no write
+:cnoremap qq q!
+
+" Display extra whitespace
+" set list listchars=tab:»·,trail:·,nbsp:·
+
 
 " status line
 set laststatus=2
