@@ -19,7 +19,7 @@ execute pathogen#infect()
 filetype plugin indent on
 syntax enable
 
-autocmd FileType python setl shiftwidth=2 softtabstop=2 et
+" autocmd FileType python setl shiftwidth=2 softtabstop=2 et
 
 " number
 set numberwidth=5
@@ -60,14 +60,19 @@ set wildmenu
 set wildmode=longest:full,full
 
 " Make it obvious where 80 characters is
-set textwidth=80
-set colorcolumn=+1
+" set textwidth=80
+" set colorcolumn=+1
    
 " qq for no write
 :cnoremap qq q!
 
 " Display extra whitespace
 " set list listchars=tab:»·,trail:·,nbsp:·
+"
+
+" make j and k jumps
+nnoremap <expr> k (v:count > 1 ? "m'" . v:count : '') . 'gk'
+nnoremap <expr> j (v:count > 1 ? "m'" . v:count : '') . 'gj'
 
 
 " status line
