@@ -19,7 +19,7 @@ execute pathogen#infect()
 filetype plugin indent on
 syntax enable
 
-autocmd FileType python setl shiftwidth=2 softtabstop=2 et
+" autocmd FileType python setl shiftwidth=2 softtabstop=2 et
 
 " number
 set numberwidth=5
@@ -28,7 +28,7 @@ set number relativenumber
 " center scrolling
 set scrolloff=999
 
-set mouse=a
+set mouse=v
 
 set shiftwidth=2
 set tabstop=2
@@ -44,6 +44,7 @@ colorscheme solarized
 
 set hlsearch
 set clipboard=unnamed
+:nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
 " easy escape
 let g:easyescape_chars = { "j": 1, "k": 1 }
