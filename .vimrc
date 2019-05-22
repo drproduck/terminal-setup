@@ -76,6 +76,7 @@ nnoremap <expr> k (v:count > 1 ? "m'" . v:count : '') . 'gk'
 nnoremap <expr> j (v:count > 1 ? "m'" . v:count : '') . 'gj'
 
 
+
 " status line
 set laststatus=2
 
